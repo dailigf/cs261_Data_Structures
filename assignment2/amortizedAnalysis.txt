@@ -1,0 +1,61 @@
+Author:  Francis C. Dailig
+Date: 4/23/208
+
+
+1.  How many cost units are spent in the entire process of performing 40 consecutive push operations on an empty array which starts out
+at capacity 8, assuming that the array will double in capacity each time a new item is added to an already full dynamic array? As N
+(ie. the number of pushes) grows large, under this strategy for resizing, what is the average big-oh complexity for a push?
+	- First 8 push operations = 8
+	- 9th = 8 + 1 = 9
+	- push operations from 10 to 16 = 7
+	- 17th = 16 + 1 = 17
+	- push operations from 18 to 24 = 7
+	- 25th = 24 + 1 = 25
+	- push operations from 26 to 32 = 7
+	- 33rd = 32 + 1 = 33
+	- push operations from 34 to 40 = 7
+	- Total cost: 120
+
+	- Average cost is: O(1)+
+
+2.  How many cost units are spent in the entire process of performing 40 consecutive push operations on an empty array which starts out
+at capacity 8, assuming that the array will grow by a constant 2 spaces each time a new item is added to an already full dynamic
+array? As N (ie. the number of pushes) grows large, under this strategy for resizing, what is the average big-oh complexity for a
+push?
+	- First 8 pushes = 8
+	- 9th = 8 + 1 = 9
+	- 10th push = 1
+	- 11th push = 10 + 1 = 11
+	- 12th push = 1
+	- 13th push = 12 + 1 = 13
+	- 14th push = 1
+	- 15th push = 14 + 1 = 15
+	- 16th push = 1
+	- 17 = 16 + 1 = 17
+	- 18th = 1
+	- 19th = 18 + 1 = 19
+	- 20 = 1
+	- 21 = 21
+	- 22 = 1
+	- 23 = 23
+	- 24 = 1
+	- 25 = 25
+	- 26 = 1
+	- 27 = 27
+	- 28 = 1
+	- 29 = 29
+	- 30 = 1
+	- 31 = 31
+	- 32 = 1
+	- 33 = 33
+	- 34 = 1
+	- 35 = 35
+	- 36 = 1
+	- 37 = 37
+	- 38 = 1
+	- 39 = 39
+	- 40 = 1
+
+	Total = 495
+As N grows very large, the nuber of operations will grow very large since the array is being resized every other push.  Complexity is O(n).
+	
